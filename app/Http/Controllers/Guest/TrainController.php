@@ -12,7 +12,9 @@ class TrainController extends Controller
      */
     public function index()
     {
-        dd(Train::all());
+        // dd(Train::all());
+        $trains = Train::orderBy('orario_di_partenza')->get();
+        return view('guests.trains.index', compact('trains'));
     }
 
 

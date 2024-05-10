@@ -19,3 +19,4 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/trains',[TrainController::class, 'index']);
+Route::get('/trains{$train}',[TrainController::class, 'show']);
