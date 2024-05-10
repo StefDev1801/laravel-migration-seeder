@@ -1,3 +1,3 @@
 <footer>
-    FOOTER
+&#9400;All right reserved
 </footer>
